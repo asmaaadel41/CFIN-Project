@@ -1,0 +1,157 @@
+hr {
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(181, 185, 210, -1),
+      rgba(0, 23, 105, 1), rgba(181, 185, 210, -1));
+}
+
+.business li::before {
+  content: "";
+  background: #00e5b9;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  padding: 5px 8px;
+  font-size: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.statistics button {
+  margin-left: 15%;
+}
+
+/* Media Query */
+@media(max-width:992px) {
+
+  .introduction {
+    padding-bottom: 50px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .introduction .img1 {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .introduction h6 {
+    font-size: 20px;
+  }
+
+  .introduction .before,
+  .introduction .after {
+    padding-bottom: 10px;
+  }
+
+  .introduction .after {
+    padding-top: 30px;
+  }
+
+  .introduction .after .after-info {
+    padding: 0 5%;
+    margin-bottom: 15px;
+  }
+
+  .introduction .after .img3 {
+    width: 75%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .introduction .before .before-info {
+    padding: 5%;
+    margin-top: 20px;
+  }
+
+  .introduction .card-deck {
+    margin: 0;
+  }
+
+  .business .concepts {
+    padding-left: 30px;
+  }
+
+  .statistics .start {
+    margin: 0
+  }
+
+  .firm .firm-head {
+    padding: 0px 10%;
+  }
+
+  .introduction .card-deck {
+    margin: 5% 22%;
+  }
+
+  .statistics button {
+    margin-bottom: 50px;
+  }
+
+  .statistics img {
+    width: 100%;
+  }
+
+  .introduction .card-deck .card-body p {
+    padding: 0 10px;
+  }
+
+  .introduction .par1 {
+    padding: 20px 10px
+  }
+
+  .business {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width:400px) and (max-width: 600px) {
+  .introduction .card-deck {
+    margin: 5% 22%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .introduction .card-deck {
+    margin: 7%
+  }
+
+  .statistics {
+    padding: 20px 0;
+  }
+
+  .statistics h2 {
+    margin-bottom: 15px;
+  }
+
+  .firm {
+    padding: 30px 0;
+  }
+
+  .firm .firm-head {
+    padding: 0;
+  }
+
+  .firm .form-group .touch {
+    margin: 0 0 5% 15%;
+  }
+
+  .firm .form-group {
+    padding: 10px 0;
+  }
+}
+
+
+@media(min-width: 575px) {
+  .business {
+    background-color: #efeffe;
+    padding: 18% 5% 6%;
+    margin-top: -170px;
+    z-index: -2;
+  }
+
+  .business .concepts {
+    padding-left: 6em;
+  }
+}

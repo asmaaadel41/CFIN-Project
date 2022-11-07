@@ -1,0 +1,11 @@
+<div class="row justify-content-center gap-3">
+  <div class="card py-3 col-md-4 col-sm-12 rounded-5 text-center" *ngFor="let card of cards">
+    <div class="mt-4 text-center">
+      <img [src]="card.image" alt="Card image cap">
+    </div>
+    <div class="card-body p-0 mt-3">
+      <h2 class="fs-2 dark-blue">{{card.title}}</h2>
+      <p class="fs-6 py-md-0 roboto-font">{{card.description}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+<!-- Start Introduction Section -->
+<section class="introduction roboto-font pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <p class="fs-4 p-md-5 dark-blue">
+          <span class="fw-bold text-uppercase">cfin</span> will unleash your business's potential
+          and drive everlasting impact by providing insights about all
+          your business financials in a simple dashboard.
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-end">
+        <img class="w-75" src="assets/home/Vector Smart Object copy.png" alt="Vector Smart">
+      </div>
+    </div>
+    <div class="text-center mt-5 mb-3">
+      <h6 class="dark-blue fs-4 mb-4">A Simplistic, Informative, and Leading Tool</h6>
+      <button class="btn bg-color rounded-5 border-0 py-2 px-4 dark-blue fs-5" routerLink="/signup">
+        Start your free trial now
+      </button>
+    </div>
+
+    <div class="row p-md-5 d-flex align-items-center justify-content-center">
+      <div class="col-md-6 col-sm-12 mb-4 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200">
+        <img class="w-75" src="assets/home/Vector Smart Object-3.png" alt="Vector Smart">
+      </div>
+      <div class="col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="2s" data-wow-offset="200">
+        <h4 class="dark-blue fw-bold ms-md-5">Before</h4>
+        <p class="fs-5 ms-md-5">
+          Multiple files with multiple versions <br>related to different financial subjects
+        </p>
+      </div>
+    </div>
+    <hr class="border-0">
+    <div class="row after p-md-5  d-flex align-items-center justify-content-center">
+      <div class="col-md-6 col-sm-12 mb-4 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200">
+        <h4 class="dark-blue fw-bold">After</h4>
+        <p class="fs-5">
+          All in one live and unified dashboard that presents <br> the most critical insights of your firm
+        </p>
+      </div>
+      <div class="col-md-6 mt-3 col-sm-12 wow bounceInRight" data-wow-duration="2s" data-wow-offset="200">
+        <img class="w-75 ms-md-5" src="assets/home/Vector Smart Object-4.png" alt="Vector Smart">
+      </div>
+    </div>
+    <div class="text-center mt-4 mb-5">
+      <button class="btn bg-color rounded-5 border-0 py-2 px-4 dark-blue fs-5" routerLink="/about">
+        Know More About Us
+      </button>
+    </div>
+    <app-card></app-card>
+  </div>
+</section>
+<!-- End Introduction Section -->
+
+<!-- Start Business Section -->
+<section class="business dark-blue position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 concepts pe-md-0">
+        <h4 class="fw-bold mb-5">Business Concepts That Feed CFIN's Brain</h4>
+        <ul class="list-unstyled ps-3">
+          <li class="fs-6 mb-2" *ngFor="let concept of concepts">
+            <div class="d-inline-block">
+              <p class="fw-bold feat">{{concept.title}}</p>
+              <p>{{concept.details}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-duration="2s" data-wow-offset="200">
+        <img class="w-75 ms-md-5" src="assets/home/Vector Smart Object-5.png" alt="Vector Smart Object">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Business Section -->
+
+<!-- Start Statistics Section -->
+<section class="statistics bg-color py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 pt-md-5 col-sm-12 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200">
+        <div class="mt-md-3">
+          <h2 class="dark-blue fw-bold mb-0 fs-2">Start your free trial now</h2>
+          <p class="text-white">One month free then 150 SAR/ month or 1350/ year(112.5 SAR/month)</p>
+          <button class="btn bg-white dark-blue border-0 fw-bold rounded-5 mt-3 py-2 px-4 fs-4" type="submit"
+            routerLink="/signin">
+            Start now
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="2s" data-wow-offset="200">
+        <div class="text-md-end text-center">
+          <img class="w-75 " src="assets/home/Mocha.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Statistics Section -->
+
+<!-- Start Firm Section -->
+<section class="firm roboto-font py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold dark-blue text-center mb-3 mt-3">We care about your firm as much as <br> we care
+      about ours.</h2>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 text-center">
+        <img src="assets/home/contact.png" class="mt-md-5 w-75" alt="Contact">
+      </div>
+      <div class="col-md-6 text-center col-sm-12 form-group wow fadeIn" data-wow-duration="2s" data-wow-offset="200">
+        <h2 class="fs-1 mt-5 light-color fw-bold mb-4">Get In Touch</h2>
+        <form>
+          <div class="form-input">
+            <input type="text" class="mb-3 border-start-0 border-top-0 border-end-0 m-auto w-75 py-2 px-0"
+              placeholder="Name" style="color: blue;">
+          </div>
+          <div class="form-input">
+            <input type="email" class="mb-3 border-start-0 border-top-0 border-end-0 m-auto w-75 py-2 px-0"
+              class="mb-3 border-start-0 border-top-0 border-end-0 m-auto w-75 py-2 px-0" placeholder="Email"
+              style="color: blue;">
+          </div>
+          <div class="form-input">
+            <input type="text" class="mb-3 border-start-0 border-top-0 border-end-0 m-auto w-75 py-2 px-0"
+              placeholder="Subject" style="color: blue;">
+          </div>
+          <div class="form-input">
+            <input type="text" class="mb-5 border-start-0 border-top-0 border-end-0 m-auto w-75 py-2 px-0"
+              placeholder="Details" style="color: blue;">
+          </div>
+          <button class="btn px-4 bg-color rounded-5 fs-5 dark-blue fw-bold border-0" type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Firm Section -->
