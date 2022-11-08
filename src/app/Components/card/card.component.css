@@ -1,9 +1,14 @@
+.card {
+  width: 25%
+}
+
 img {
   height: 100px;
 }
 
-@media(min-width: 756px) {
+@media(max-width: 992px) {
   .card {
-    width: 25%
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
