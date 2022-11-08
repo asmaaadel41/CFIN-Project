@@ -1,7 +1,6 @@
 hr {
   height: 2px;
-  background-image: linear-gradient(to right, rgba(181, 185, 210, -1),
-      rgba(0, 23, 105, 1), rgba(181, 185, 210, -1));
+  background-image: linear-gradient(to right, rgba(181, 185, 210, -1), rgba(0, 23, 105, 1), rgba(181, 185, 210, -1));
 }
 
 .introduction .par {

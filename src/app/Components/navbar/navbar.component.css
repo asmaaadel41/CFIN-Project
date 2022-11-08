@@ -7,3 +7,15 @@
 .navbar ul li .active {
   border-bottom: 2px solid #00e5b9 !important;
 }
+
+/* Media Query */
+@media(max-width:992px) {
+  .navbar-nav .nav-item {
+    margin: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+
+}

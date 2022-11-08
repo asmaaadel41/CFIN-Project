@@ -13,7 +13,6 @@
 .roboto-font {
   font-family: Roboto;
 }
-
 .btn:focus {
   box-shadow: none;
   outline: none;
@@ -48,14 +47,3 @@ input:focus {
   -ms-transition: all ease-in-out .5s;
 }
 
-/* Media Query */
-@media(max-width:992px) {
-  .navbar-nav .nav-item {
-    margin: 10px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 15px;
-  }
-
-}
