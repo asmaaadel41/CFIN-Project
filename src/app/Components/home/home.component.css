@@ -4,7 +4,6 @@ hr {
       rgba(0, 23, 105, 1), rgba(181, 185, 210, -1));
 }
 
-
 .introduction .par {
   padding: 40px;
 }
@@ -26,11 +25,11 @@ li::before {
   -o-border-radius: 50%;
 }
 
-.btn {
+.startNow {
   background-color: white;
 }
 
-.btn:hover {
+.startNow:hover {
   background-color: #001769 !important;
 }
 
@@ -45,37 +44,7 @@ li::before {
     margin-top: 10px;
     padding-top: 3em;
   }
-
 }
-
-
-
-@media (max-width: 465px) {
-
-  .introduction .par {
-    padding: 0px;
-    padding-left: 0px;
-  }
-
-  /*
-
-  .firm {
-    padding: 30px 0;
-  }
-
-  .firm .firm-head {
-    padding: 0;
-  }
-
-  .firm .form-group .touch {
-    margin: 0 0 5% 15%;
-  }
-
-  .firm .form-group {
-    padding: 10px 0;
-  } */
-}
-
 
 @media(min-width: 768px) {
   .business {
@@ -83,5 +52,11 @@ li::before {
     padding-top: 15em;
     padding-bottom: 5em;
   }
+}
 
+@media (max-width: 465px) {
+  .introduction .par {
+    padding: 0px;
+    padding-left: 0px;
+  }
 }
