@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,36 +6,31 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent {
 
-  form: FormGroup;
+  signupForm: FormGroup;
   constructor(private fb: FormBuilder) {
-    this.form = this.fb.group({
-      firstName: ['', Validators.required, Validators.minLength(3)],
-      lastName: ['', Validators.required, Validators.minLength(3)],
-      email: ['', Validators.required, Validators.email],
-      mobile: ['', Validators.required],
-      password: ['', Validators.required],
-
+    this.signupForm = this.fb.group({
+      firstName: ['', Validators.minLength(3)],
+      lastName: ['', Validators.minLength(3)],
+      email: ['', Validators.email],
+      mobile: [''],
+      password: [''],
     })
   }
   get firstName() {
-    return this.form.get('firstName')
+    return this.signupForm.get('firstName')
   }
   get lastName() {
-    return this.form.get('lastName')
+    return this.signupForm.get('lastName')
   }
   get email() {
-    return this.form.get('email')
+    return this.signupForm.get('email')
   }
   get mobile() {
-    return this.form.get('mobile')
+    return this.signupForm.get('mobile')
   }
   get password() {
-    return this.form.get('password')
+    return this.signupForm.get('password')
   }
-
-  ngOnInit(): void {
-  }
-
 }

@@ -8,16 +8,25 @@
       </div>
       <div class="col-md-6 col-sm-12 text-center m-auto">
         <h2 class="light-color fw-bold mb-md-5 mb-4">Welcome back !</h2>
-        <form class="mb-3">
-          <div class="form-input">
-            <input type="email" class="mb-4 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Email">
+        <form class="mb-3" [formGroup]="signinForm">
+          <div class="form-input mb-4">
+            <input type="email" formControlName="email" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Email">
+            <div class="text-danger text-start ms-5 ps-4" *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+              <span *ngIf="email?.errors?.['required']">Email is required</span>
+              <span *ngIf="email?.errors?.['email']">Invalid email</span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="password" class="mb-5 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Password">
+          <div class="form-input mb-5">
+            <input type="password" formControlName="password" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Password">
+            <div class="text-danger text-start ms-5 ps-4"
+              *ngIf="password?.invalid && (password?.touched || password?.dirty)">
+              <span *ngIf="password?.errors?.['required']">Password is required</span>
+            </div>
           </div>
-          <button class="btn px-5 bg-color rounded-5 fs-6 dark-blue fw-bold border-0" routerLink="/home">
+          <button [disabled]="!signinForm.valid" class="btn px-5 rounded-5 fs-6 dark-blue fw-bold border-0"
+            routerLink="/home">
             Log In
           </button>
         </form>

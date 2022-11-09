@@ -4,29 +4,50 @@
       <div class="col-md-6 col-sm-12 text-center">
         <h2 class="dark-blue fw-bold text-md-start">Start your free trial now</h2>
         <p class="fs-6 mb-4 text-md-start">One month free then 150 SAR/ month<br /> or 1350/ year (112.5 SAR/month)</p>
-        <form class="mb-3">
-          <div class="form-input">
-            <input type="text" class="mb-4 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="First Name">
+        <form class="mb-3" [formGroup]="signupForm">
+          <div class="form-input mb-4">
+            <input type="text" formControlName="firstName" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="First Name">
+            <div class="text-danger text-start ms-5 ps-4"
+              *ngIf="firstName?.invalid && (firstName?.touched || firstName?.dirty)">
+              <span *ngIf="firstName?.errors?.['required']">First name is required</span>
+              <span *ngIf="firstName?.errors?.['minlength']">First name must be more than 3 letters</span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="text" class="mb-4 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Last Name">
+          <div class="form-input mb-4">
+            <input type="text" formControlName="lastName" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Last Name">
+            <div class="text-danger text-start ms-5 ps-4"
+              *ngIf="lastName?.invalid && (lastName?.touched || lastName?.dirty)">
+              <span *ngIf="lastName?.errors?.['required']">Last name is required</span>
+              <span *ngIf="lastName?.errors?.['minlength']">Last name must be more than 3 letters</span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="email" class="mb-4 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Email">
+          <div class="form-input mb-4">
+            <input type="email" formControlName="email" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Email">
+            <div class="text-danger text-start ms-5 ps-4" *ngIf="email?.invalid && (email?.touched || email?.dirty)">
+              <span *ngIf="email?.errors?.['required']">Email is required</span>
+              <span *ngIf="email?.errors?.['email']">Invalid email</span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="number" class="mb-4 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Mobile">
+          <div class="form-input mb-4">
+            <input type="text" formControlName="mobile" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Mobile">
+            <div class="text-danger text-start ms-5 ps-4" *ngIf="mobile?.invalid && (mobile?.touched || mobile?.dirty)">
+              <span *ngIf="mobile?.errors?.['required']">Mobile is required</span>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="password" class="mb-5 border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0"
-              placeholder="Password">
+          <div class="form-input mb-5">
+            <input type="password" formControlName="password" required
+              class="border-start-0 border-top-0 border-end-0 m-auto w-75 py-1 px-0" placeholder="Password">
+            <div class="text-danger text-start ms-5 ps-4"
+              *ngIf="password?.invalid && (password?.touched || password?.dirty)">
+              <span *ngIf="password?.errors?.['required']">Password is required</span>
+            </div>
           </div>
-          <button class="btn px-4 bg-color rounded-5 fs-6 dark-blue fw-bold border-0" type="submit"
-            routerLink="/signin">
+          <button class="btn px-4 rounded-5 fs-6 dark-blue fw-bold border-0" type="submit" routerLink="/signin"
+            [disabled]="!signupForm.valid">
             Get Started
           </button>
         </form>

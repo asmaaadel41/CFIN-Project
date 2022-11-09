@@ -1,0 +1,13 @@
+.btn{
+  background-color: #00e5b9;
+}
+.btn:hover {
+  color: #00e5b9 !important;
+  background-color: #001769;
+  -webkit-transition: all ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  box-shadow: 0px 1px 10px #3B5998;
+  -ms-transition: all ease-in-out .5s;
+}
