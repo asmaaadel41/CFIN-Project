@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .light-color {
   color: #00e5b9;
 }
@@ -35,9 +40,10 @@ input:focus {
 }
 
 /* ///////////////////////////////////////////////// */
-.btn{
+.btn {
   background-color: #00e5b9;
 }
+
 /* Hover */
 .btn:hover {
   color: #00e5b9 !important;
