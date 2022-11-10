@@ -46,7 +46,7 @@
               <span *ngIf="password?.errors?.['required']">Password is required</span>
             </div>
           </div>
-          <button class="btn px-4 rounded-5 fs-6 dark-blue fw-bold border-0" type="submit" routerLink="/signin"
+          <button class="btn px-4 rounded-5 fs-6 dark-blue fw-bold border-0" type="submit" routerLink="/user/signin"
             [disabled]="!signupForm.valid">
             Get Started
           </button>
@@ -54,7 +54,7 @@
 
         <p class="fs-6 dark-blue fw-bold  ml-3 mb-5 mb-md-0">
           Already have an account ?
-          <a routerLink="/signin" class="dark-blue fw-bold text-decoration-underline">
+          <a routerLink="/user/signin" class="dark-blue fw-bold text-decoration-underline">
             <strong>Log in</strong>
           </a>
         </p>

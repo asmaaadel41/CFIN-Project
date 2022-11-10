@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light roboto-font">
+<nav class="navbar navbar-expand-lg navbar-light roboto-font" *ngIf="nav.navbarVisible">
   <div class="container">
     <a class="navbar-brand me-0" routerLink="#">
       <img src="assets/home/logo.png" loading="lazy" class="navImage w-75 mt-2">
@@ -10,20 +10,20 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0 mt-2">
         <li class="nav-item me-md-2 py-0 px-2">
-          <a class="nav-link p-0" routerLink="home" routerLinkActive="active">Home</a>
+          <a class="nav-link p-0" routerLink="main/home" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item me-md-2 py-0 px-2">
-          <a class="nav-link p-0" routerLink="about" routerLinkActive="active">About</a>
+          <a class="nav-link p-0" routerLink="main/about" routerLinkActive="active">About</a>
         </li>
         <li class="nav-item me-md-2 py-0 ps-2">
-          <a class="nav-link p-0" routerLink="contactus" routerLinkActive="active">Contact Us</a>
+          <a class="nav-link p-0" routerLink="main/contactus" routerLinkActive="active">Contact Us</a>
         </li>
       </ul>
       <div class="navbar-text d-flex align-items-center justify-content-around">
-        <button class="btn rounded-5 me-2 py-1 px-3 fw-bold bg-color" routerLink="signin">
+        <button class="btn dark-blue rounded-5 me-2 py-1 px-3 fw-bold bg-color" routerLink="user/signin">
           Log In
         </button>
-        <button class="btn rounded-5 py-1 px-3 fw-bold bg-color" routerLink="signup">
+        <button class="btn dark-blue rounded-5 py-1 px-3 fw-bold bg-color" routerLink="user/signup">
           Sign Up
         </button>
       </div>
