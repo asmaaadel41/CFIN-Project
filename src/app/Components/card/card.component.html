@@ -1,7 +1,7 @@
 <div class="d-flex my-5 justify-content-md-center flex-column flex-md-row wow fadeIn" data-wow-duration="2s" data-wow-offset="200">
   <div class="card border rounded-5 mx-md-3 py-3 text-center" *ngFor="let card of cards">
     <div>
-      <img [src]="card.image" class="my-4" alt="Card image cap">
+      <img [src]="card.image" class="my-4" loading="lazy" alt="Card image cap">
     </div>
     <h2 class="dark-blue fw-bold">{{card.title}}</h2>
     <p class="px-3">{{card.description}}</p>
