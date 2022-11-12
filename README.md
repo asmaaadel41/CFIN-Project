@@ -1,4 +1,4 @@
-# Cfin
+# CFIN Project .. A client asked me to do this project as a freelancing project.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
